@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&family=Open+Sans:wght@300;400&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="page">
+
+<!-- Sprite -->
+<svg style="display: none;">
+    <symbol viewBox="0 0 382 159" id="logo">
+        <g>
+            <path d="M0 79.5V159h382V0H0v79.5zm380 0V157H2V2h378v77.5z"></path>
+            <path d="M35 79.5c0 27 .3 41.5 1 41.5s1-14.5 1-41.5S36.7 38 36 38s-1 14.5-1 41.5zm9 0V121l20-.2c26.1-.4 27.1-2.2 1.5-2.6L47 118V78c0-34.9-.2-40-1.5-40S44 43.3 44 79.5zm195.1-28.3c-7 2.8-14.9 10.6-18.7 18.3-2.6 5.4-2.9 7-2.9 16 0 8.8.3 10.7 2.7 15.8 8.5 18 28.8 26 45.8 18.1 27.8-13.1 28.9-52.1 1.8-66.9-4.6-2.5-6.6-3-14.3-3.2-7.4-.2-10 .1-14.4 1.9zm26.3 3.2c10.1 4.7 9.6 3.2 9.6 31.1 0 28 .5 26.6-9.6 31.2-10.6 4.8-22.2 3.8-31.2-2.7l-4.2-3 .2-25.7.3-25.7 4-2.7c9.3-6.2 20.9-7.2 30.9-2.5zM227 85.6c0 23.7-.4 24.8-5.1 14.1-1.7-4-2.3-7.1-2.3-13.7-.1-7.6.3-9.2 3.1-15.3 1.8-3.7 3.4-6.7 3.7-6.7.4 0 .6 9.7.6 21.6zm54.7-15.4c2.5 4.8 2.8 6.3 2.8 15.3 0 8.9-.3 10.6-2.8 15.7-1.6 3.2-3.3 5.8-3.8 5.8s-.9-8.8-.9-21c0-13.1.4-21 1-21 .5 0 2.2 2.4 3.7 5.2zM97 85.5c0 23 .4 35.5 1 35.5s1-12.5 1-35.5S98.6 50 98 50s-1 12.5-1 35.5zm9.5-34.3c-.3.7-.4 16.6-.3 35.3l.3 34h16.3c21.1 0 22.1-1.9 1.2-2.3l-15-.3V85.1l12.3-.3c7.3-.2 12.2-.7 12.2-1.3 0-.6-4.9-1.1-12.2-1.3l-12.3-.3V53.1l15-.3c20.8-.4 20.2-2.2-.8-2.6-12.5-.2-16.4 0-16.7 1zm41.6.5c.8 1 7.6 9.3 15.2 18.5L177.1 87l-1.8 2.5c-1 1.3-2.2 2.4-2.8 2.4-.5 0-4.9-4.8-9.7-10.7-4.8-5.9-10.3-12.5-12.3-14.7l-3.4-4-.1 29.3c0 23.1.3 29.3 1.3 28.9.9-.3 1.2-6.3 1.4-25.1.1-13.6.3-25 .6-25.2.2-.2 5.3 5.4 11.2 12.6 5.9 7.1 10.9 13 11.1 13 .1 0 5.8-6.7 12.7-15 6.9-8.2 12.7-14.6 13.1-14.3.3.4.6 12.7.6 27.5 0 17.2.4 26.8 1 26.8s1-10.4 1-29.3V62.3l2.8-3.6c1.5-2 3-3.6 3.5-3.7.4 0 .7 14.9.7 33.1 0 26 .3 33 1.3 32.7 1.7-.6 1.8-69.9.1-70.5-.6-.2-7.5 7.3-15.3 16.6-7.7 9.3-14.4 17.2-14.9 17.5-.5.3-7.3-7.3-15.3-16.9-7.9-9.6-15-17.5-15.8-17.5-1.1 0-1.1.3 0 1.7zm148.1-.8c.2.6 9.3 12.1 20.3 25.6 11 13.6 21.1 26.2 22.5 28.1 1.4 1.8 2.8 3.4 3.3 3.4.4 0 .7-13.1.7-29.1 0-22.8-.3-29-1.2-28.6-1 .3-1.3 6.4-1.5 25.2-.1 13.6-.4 24.9-.6 25.1-.2.3-9.7-11-21.1-25.1-17.9-22-23.8-28.5-22.4-24.6zm-.2 40.9c0 18.8.4 29.2 1 29.2s1-9.2 1-25.6c0-15.7.4-25.3.9-24.9.6.3 10.1 11.8 21.2 25.5 11.1 13.8 20.8 25 21.6 25 .9 0-.2-2-2.9-5.4-13.2-16.5-41.2-51.2-42-52.1-.4-.5-.8 12.2-.8 28.3z"></path>
+        </g>
+    </symbol>
+</svg>
+
+<!-- 
+<svg class="icon">
+    <use xlink:href="#logo"></use>
+</svg>
+
+<svg class="icon">
+    <use fill="#fff" xlink:href="#logo"></use>
+</svg> 
+-->
+
+
+
+<!-- Intro -->
+    <div class="intro">
+        <svg class="icon">
+            <use xlink:href="#logo"></use>
+        </svg>
+    </div>
+
+
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <svg class="header__logo">
+                <use xlink:href="#logo"></use>
+            </svg>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Recipes</a>
+
+                        <ul class="nav__list-drop">
+                            <li><a class="nav__link  nav__link--drop" href="#">RECOMMENDED</a></li>
+                            <li><a class="nav__link  nav__link--drop" href="#">POPULAR</a></li>
+                            <li><a class="nav__link  nav__link--drop" href="#">QUICK & EASY</a></li>
+                            <li><a class="nav__link  nav__link--drop" href="#">HEALTHY</a></li>
+                            <li><a class="nav__link  nav__link--drop" href="#">NEWEST</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="#">Photo Galleries</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Videos</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">All Categories</a></li>
+                </ul>
+            </nav>
+
+            <button class="btn" type="button">
+                <i class="fas fa-search"></i> Find a recipe
+            </button>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- Hero Page  -->
+<div class="hero-page">
+    <div class="container">
+        <div class="hero-page__inner">
+            <div class="hero-page__content">
+                <svg class="hero-page__logo">
+                    <use xlink:href="#logo"></use>
+                </svg>
+
+                <div class="hero-page__title">
+                    Bananas Foster Ice Cream Cake
+                </div>
+
+                <div class="hero-page__text">
+                    If you're looking for decadence, look no further — you've found the Holy Grail of desserts. Honestly, this cake makes us wonder why Bananas Foster hasn't always been served on top of ice cream cake.
+                </div>
+
+                <button class="btn" type="button">GET IT RECIPE</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Recipe -->
+<div class="recipe">
+    <div class="container">
+        <div class="recipe__inner">
+            <div class="recipe__item">
+                <div class="recipe__img">
+                    <img src="img/recipe/recipe-1.jpg" alt="">
+                </div>
+                <div class="recipe__title">Raspberry & Cream Frozen Yogurt Pie</div>
+                <div class="recipe__info">
+                    <i class="far fa-clock"></i> 35mins &vert; 
+                    <i class="far fa-comment"></i> 7
+                    <i class="far fa-eye"></i> 14
+                </div>
+            </div>
+
+            <div class="recipe__item">
+                <div class="recipe__img">
+                    <img src="img/recipe/recipe-2.jpg" alt="">
+                </div>
+                <div class="recipe__title">Raspberry & Cream Frozen Yogurt Pie</div>
+                <div class="recipe__info">
+                    <i class="far fa-clock"></i> 20mins &vert;
+                    <i class="far fa-comment"></i> 4
+                    <i class="far fa-eye"></i> 356
+                </div>
+            </div>
+
+            <div class="recipe__item">
+                <div class="recipe__img">
+                    <img src="img/recipe/recipe-3.jpg" alt="">
+                </div>
+                <div class="recipe__title">Dark Chocolate Crunch Ice Cream Sandwich Cake</div>
+                <div class="recipe__info">
+                    <i class="far fa-clock"></i> 15mins &vert;
+                    <i class="far fa-comment"></i> 4
+                    <i class="far fa-eye"></i> 167
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Main Recipe -->
+<div class="main-recipe">
+    <div class="container">
+        <div class="main-recipe__img">
+            <img class="main-recipe__photo" src="img/recipe-more.jpg" alt="">
+            <img class="main-recipe__icon" src="img/img-icon.svg" alt="">
+        </div>
+        <div class="main-recipe__inner">
+            <div class="main-recipe__title">Bananas Foster Ice Cream Cake</div>
+            <div class="main-recipe__info">
+                <div class="main-recipe__time">
+                    <i class="far fa-clock"></i> <span>15mins</span>
+                    <img src="img/lvl.svg" alt=""> <span>Easy</span>
+                </div>
+                <div> <button class="btn" type="button">SAVE RECIPE</button> </div> 
+            </div>
+            <div class="main-recipe__content">
+                <p>1 (8 ounce) container frozen whipped topping, thawed</p>
+                <p>20 chocolate round wafers, divided</p>
+                <p>1 (7 1/4 ounce) bottle Smucker's® Hot Dark Chocolate Microwaveable Topping, divided</p>
+                <br>
+                <p> <strong>Directions</strong> </p>
+                <br>
+                ARRANGE 8 to 9 ice cream sandwiches in 9-inch square pan, cutting to form an even layer. Spread with half of whipped topping. Break or crush chocolate wafers and sprinkle over the whipped cream. Microwave 1 cup of chocolate topping into small microwave-safe bowl on HIGH for 30 seconds. Drizzle evenly over wafers.
+                TOP with remaining 8 to 9 ice cream sandwiches to form an even layer. Spread with remaining whipped topping. Freeze 3 hours or overnight. Remove from freezer 10 minutes before serving. Cut into squares.
+                HEAT remaining topping. Drizzle each serving with topping. Sprinkle with decorator sprinkles.
+                Nutritional information (amount per servings): Total Calories: 640. Sodium 440mg. Fat: 32g. Carbohydrates: 82g. Cholesterol: 40mg. Protein: 11g. Fiber: 1g.վ</div> 
+        </div>
+    </div>
+</div>
+
+
+
+<!-- About -->
+<div class="about">
+    <div class="container">
+        <div class="page-err">
+            <div class="title">404</div>
+            <div class="page-err__inner">
+                <div class="page-err__title">Sorry</div>
+                <div class="page-err__text">WE COULDN’T FIND THE PAGE</div>
+                <div class="page-err__emoji">:(</div>
+                <button class="btn" type="button" >BACK</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="author">
+            <div class="title">Author</div>
+            <div class="author__inner">
+                <div class="author__name">Karen Gra</div>
+                <div class="author__info">
+                    <div class="author__country">United State</div>
+                    <div class="author__social">
+                        <!--|||||||||||||||||||S|O|C|I|A|L|||||||||||||||||||| -->
+                    </div>
+                </div>
+                <div class="author__about">
+                    <div class="author__about__title">About Lemon</div>
+                    <div class="author__about__text">Over the fifteen-year life span of Food.com, we’ve learned that – in addition to eating – sharing is what you do best. And thanks to the 20 million of you who come here each month, we now have 500,000 recipes to show for it, more than anywhere else in the digital universe. We also have tons crazy-tempting photos, troves of recipe reviews and more than 2 million Facebook likes. That’s a heck of a lot of Food. Thank you!</div>
+                </div>
+                <div class="author__signature">
+                    <img src="img/author-signature.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Widget -->
+<div style="display: flex; justify-content: space-between;" class="widget">
+    <div style="display: flex; flex-direction: column; width: 100%; max-width: 290px; margin: 50px;" class="widget-container__column">
+        <div class="container">
+            <div>
+                <div class="title_big">Chi-Chi</div>
+                <div class="user-name">
+                    Recipe by <b>Smuckersreg Toppings</b>
+                </div>
+                <div class="recipe__info">
+                    <i class="far fa-clock"></i> 20mins &vert;
+                    <i class="far fa-comment"></i> 4
+                    <i class="far fa-eye"></i> 356
+                </div>
+                <!-- Slider////////******** -->
+                <div class="img"> 
+                    <img src="img/bloger-recipe.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div>
+                <div class="title">
+                    <span>Target</span><span class="social">****</span>
+                </div>
+                <div class="target__title">Presentation line</div>
+                <div class="target__item">
+                    <img src="#" alt="#">
+                    <div class="target__item-title">Housewives</div>
+                    <div class="target__item-text">Lorem ipsum dolor sit amet.</div>
+                </div>
+                <div class="target__item">
+                    <img src="#" alt="#">
+                    <div class="target__item-title">Housewives</div>
+                    <div class="target__item-text">Lorem ipsum dolor sit amet.</div>
+                </div>
+                <div class="target__item">
+                    <img src="#" alt="#">
+                    <div class="target__item-title">Housewives</div>
+                    <div class="target__item-text">Lorem ipsum dolor sit amet.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; width: 100%; max-width: 290px; margin: 50px;" class="widget-container__column">
+        <div class="container">
+            <div>
+                <div class="title">
+                    <span>Recipe</span><span class="social">****</span>
+                </div>
+                <div class="tabs">
+                    <button>EASY</button>
+                    <button>MIDDLE</button>
+                    <button>LONG</button>
+                </div>
+                <div class="tab-recipe">
+                    <div class="widget__recipe__item">
+                        <img src="#" alt="#">
+                        <div class="widget__recipe__item-user-name">
+                            by <b>Smuckersreg Toppings</b>
+                        </div>
+                        <div class="widget__recipe__item-text">Lorem ipsum dolor sit amet.</div>
+                    </div>
+                    <div class="widget__recipe__item">
+                        <img src="#" alt="#">
+                        <div class="widget__recipe__item-user-name">
+                            by <b>Smuckersreg Toppings</b>
+                        </div>
+                        <div class="widget__recipe__item-text">Lorem ipsum dolor sit amet.</div>
+                    </div>
+                    <div class="widget__recipe__item">
+                        <img src="#" alt="#">
+                        <div class="widget__recipe__item-user-name">
+                            by <b>Smuckersreg Toppings</b>
+                        </div>
+                        <div class="widget__recipe__item-text">Lorem ipsum dolor sit amet.</div>
+                    </div>
+                </div>
+                <button class="btn" type="button">VIEW MORE</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="tags">
+                <div class="title">Tags</div>
+            </div>
+            <div class="tags__link">
+                <a href="#">#</a>
+                <a href="#">#</a>
+                <a href="#">#</a>
+                <a href="#">#</a>
+                <a href="#">#</a>
+                <a href="#">#</a>
+                <a href="#">#</a>
+                <a href="#">#</a>
+                <a href="#">#</a>
+                <a href="#">#</a>
+                <a href="#">#</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="calendar">
+                <div class="title">Calendar</div>
+            </div>
+            *****Calendar*****
+        </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; width: 100%; max-width: 290px; margin: 50px;" class="widget-container__column">
+        <div class="container">
+            <div class="popular">
+                <div class="popular__title">Popular Now</div>
+                <div class="popular__subtitle">Vanilla Frozen Coffe</div>
+                <div class="popular__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minus sint adipisci possimus optio architecto?</div>
+                <div class="info">
+                    <button class="btn" type="button">GET IT RECIPE</button>
+                    <div class="recipe__info">
+                        <i class="far fa-clock"></i> 20mins &vert;
+                        <i class="far fa-comment"></i> 4
+                        <i class="far fa-eye"></i> 356
+                    </div>
+                </div>
+                <img src="#" alt="#">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="timeline">
+                <span>Timeline</span><span class="social">****</span>
+            </div>
+            <div class="timeline-subtitle">Time line</div>
+            <div>
+                EASY
+                <br>
+                MIDDLE
+                <br>
+                LOHG
+            </div>
+            <div>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, accusantium.
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Login-Sing -->
+<div style="display: flex; justify-content: center;" class="login-sing">
+    <div style="max-width: 330px; margin-right: 40px;" class="container">
+        <div class="login">
+            <div class="title">Login</div>
+            <div class="login__inner">
+                <div>Login for LEMON</div>
+                <div><input class="input" type="text" placeholder="email or login"></div>
+                <div><input class="input" type="text" placeholder="password"></div>
+                <div><input type="checkbox" name="" id="">
+                <label for="">Remember me</label>
+                <a href="#">Forgot your password?</a></div>
+                <div><button class="btn">LOGIN</button></div>
+                <div class="social">F G+</div>
+                <div><a href="#">Don't have an accont? Sing in</a></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div style="max-width: 330px; margin-left: 40px;" class="container">
+        <div class="sing">
+            <div class="title">Sing in</div>
+            <div class="sing__inner">
+                <div>Sing in for LEMON</div>
+                <div><input class="input" type="text" placeholder="email"></div>
+                <div><input class="input" type="text" placeholder="user name"></div>
+                <div><input class="input" type="text" placeholder="password"></div>
+                <div><input class="input" type="text" placeholder="reapet password"></div>
+                <div><button class="btn">SING UP</button></div>
+                <div class="social">F G+</div>
+                <div><a href="#">By joining LEMON, you agree to our <span>Terms of Service.</span></a></div>
+                <div><a href="#">LOGIN</a></div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Comment Post -->
+<div style="max-width: 840px; margin: 0 auto;" class="comment-post">
+    <div class="container">
+        <div class="post__header">
+            <div class="post__title">Post a Comment</div>
+            <div class="post__link">
+                <a href="">Facebook</a>
+                <span>|</span>
+                <a href="">Twitter</a>
+            </div>
+        </div>
+        <div class="post__add">
+            <div class="post__avatar"></div>
+            <input class="post__input" type="text">
+            <button class="post__btn" type="button">POST</button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Comment Blog -->
+<div style="max-width: 840px; margin: 0 auto;" class="comment-blog">
+    <div class="container">1</div>
+</div>
+
+
+
+<!-- Pagination -->
+<div style="max-width: 840px; margin: 0 auto;" class="pagination">
+    <div class="container">
+        <div class="pagination__inner" style="text-align: center;">
+            <a class="pagination__item" href="#">&#706;</a>
+            <a class="pagination__item" href="#">1</a>
+            <a class="pagination__item" href="#">2</a>
+            <a class="pagination__item" href="#">3</a>
+            <a class="pagination__item" href="#">4</a>
+            <a class="pagination__item" href="#">5</a>
+            <a class="pagination__item" href="#">6</a>
+            <a class="pagination__item" href="#">&#707;</a>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer style="background-color: #2f2f2f; color: #fff;" class="footer">
+    <div class="header__inner">
+        <svg style=" width: 90px;" class="icon">
+            <use fill="#fff" xlink:href="#logo"></use>
+        </svg> 
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Recipes</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Photo Galleries</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Videos</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">All Categories</a></li>
+            </ul>
+        </nav>
+
+        <div class="copy">
+            &copy; 2016-2017 ksgmlalk
+            <div style="text-align: end;"> social LINK </div>
+        </div>
+    </div>
+</footer>
+
+
+</div> <!-- ./page -->
+
+</body>
+</html>
