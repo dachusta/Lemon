@@ -226,11 +226,13 @@ ul, ol{
     font-size: 32px;
     font-weight: 900;
     color: #055555;
+    padding-bottom: 10px;
 }
 
 .main-recipe__info {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
 }
 
 .main-recipe__info div {
@@ -256,6 +258,13 @@ ul, ol{
     margin-right: 10px;
 }
 
+.main-recipe__content {
+    height: 265px ;
+    overflow: auto;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
 
 /* About */
 .about {
@@ -268,7 +277,752 @@ ul, ol{
 }
 
 .page-err {
-    height: 100%;
+    height: 520px;
+    /* height: 100%; */
+    padding: 20px 30px;
     
     background: url(img/bg-404.jpg) no-repeat center;
+}
+
+.title {
+    padding: 0 0 10px 10px;
+    margin-bottom: 10px;
+
+    font-size: 20px;
+    font-style: italic;
+
+    border-bottom: 2px solid #dadbdb;
+}
+
+.page-err__inner {
+    padding-top: 150px;
+    text-align: center;
+}
+
+.page-err__title {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.page-err__text {
+    padding-bottom: 100px;
+    color: #a9a9a9;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+}
+
+.page-err__emoji {
+    width: 50px;
+    height: 60px;
+    margin: 0 auto;
+    font-size: 33px;
+    transform: rotate(80deg);
+}
+
+.author {
+    padding: 20px 30px;
+}
+
+.author__inner {
+    display: flex;
+}
+
+.author__column {
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+.author__name {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.author__country {
+    font-weight: 300;
+}
+
+.author__social {
+    padding: 10px 0;
+    margin-bottom: 20px;
+
+    border-bottom: 2px solid #dadbdb;
+}
+
+.author__social a {
+    margin: 0 5px;
+    color: #55555580;
+}
+
+.author__about__title {
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.author__about__text {
+    padding-bottom: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.author__signature {
+    text-align: right;
+}
+
+
+/* Widget */
+.widget {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.widget__column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 290px;
+}
+
+/* Chi-Chi */
+.title_big {
+    padding: 0 0 10px;
+    margin:20px;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+    color: #055555;
+
+    border-bottom: 2px solid #dadbdb;
+}
+
+.user {
+    display: flex;
+}
+
+.user-img {
+    padding: 0 20px;
+}
+
+.user-name {
+    font-weight: 300;
+}
+
+.user-name span {
+    font-weight: 700;
+}
+
+.recipe-by__img {
+    height: 200px;
+}
+
+.recipe-by__img img {
+    width: 100%;
+}
+
+/* Target */
+.target {
+    padding: 20px;
+}
+
+.target .title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title__social a {
+    margin: 0 3px;
+    font-size: 16px;
+    color: #555555;
+}
+
+.target__title {
+    padding: 0 0 30px 5px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: #055555;
+}
+
+.target__item {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.target__item-img {
+    position: relative;
+    margin-right: 30px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    font-weight: 300;
+    color: #959595;
+}
+
+.target__item-img img {
+    position: absolute;
+}
+
+.target__item-title {
+    font-size: 18px;
+    font-weight: 300;
+    color: #555555;
+    line-height: 1.5;
+}
+
+.target__item-text {
+    max-width: 140px;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    color: #555555;
+}
+
+/* Recipe duration */
+.recipe-duration {
+    padding: 20px;
+}
+
+.recipe-duration .title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.tab-btn {
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #555555;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.tab-btn:hover {
+    font-weight: 700;
+}
+
+.tab-recipe__item {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.tab-recipe__img {
+    margin-right: 15px;
+}
+
+.tab-recipe__user-name {
+    padding-bottom: 5px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.tab-recipe__text {
+    font-weight: 600;
+}
+
+.tab-recipe__btn {
+    text-align: right;
+}
+
+/* Tags */
+.tags {
+    padding: 20px;
+}
+
+.tags__link {
+    text-align: justify;
+}
+.tags__link a {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 2;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: justify;
+}
+
+.tags__link a:hover {
+    text-decoration: underline;
+}
+
+/* Calendar */
+.calendar {
+    padding: 15px;
+}
+
+#calendar2 {
+    width: 100%;
+    font: monospace;
+    line-height: 1.2em;
+    font-size: 15px;
+    text-align: center;
+}
+
+#calendar2 thead tr:last-child {
+    font-size: small;
+    color: rgb(85, 85, 85);
+}
+
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+    color: rgb(50, 50, 50);
+}
+
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+    cursor: pointer;
+}
+
+#calendar2 tbody td {
+    color: rgb(44, 86, 122);
+}
+
+#calendar2 tbody td:nth-child(n+6), #calendar2 .holiday {
+    color: rgb(231, 140, 92);
+}
+
+#calendar2 tbody td.today {
+    background: rgb(220, 0, 0);
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+/* Popular */
+.popular {
+    height: 350px;
+    padding: 30px 20px;
+    background-image: url(img/popular-now.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.popular__title {
+    padding-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: #921026;
+}
+
+.popular__subtitle {
+    padding-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.popular__text {
+    padding-bottom: 15px;
+    font-style: italic;
+    color: #222222;
+    line-height: 1.2;
+}
+
+.popular__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular__info button {
+    padding: 7px 15px;
+}
+
+/* Timeline */
+.timeline {
+    padding: 20px;
+}
+
+.timeline .title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timeline__subtitle {
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    color: #055555;
+}
+
+.timeline__items {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10px;
+    transform: rotate(-90deg);
+    border-left: 2px solid #dadbdb;
+}
+
+.timeline__title {
+    font-size: 18px;
+    font-weight: 300;
+    color: #555555;
+}
+
+.timeline__duration {
+    display: flex;
+}
+
+.timeline__rectangular {
+    width: 68px;
+    height: 9px;
+    margin: 6px 0;
+    background-color: #87d0c5;
+}
+
+.__middle {
+    width: 100px;
+    height: 9px;
+    margin: 6px 0;
+    background-color: #0d5959;
+}
+
+.__long {
+    width: 130px;
+    height: 9px;
+    margin: 6px 0;
+    background-color: #b50051;
+}
+
+.timeline__time {
+    padding-left: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #555555;
+}
+
+.timeline__text {
+    margin-top: 40px;
+    padding: 0 30px;
+    text-align: center;
+    font-weight: 300;
+    color: #6a6a6a;
+    line-height: 1.2;
+}
+
+/* Login-Sing */
+.login-sing {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 60px;
+}
+
+.login-sing .container {
+    max-width: 330px;
+    height: 100%;
+    padding: 20px 30px;
+}
+
+.login-sing__inner {
+    text-align: center;
+}
+
+.login-sing__inner .btn {
+    margin-top: 30px;
+}
+
+.suptitle {
+    font-weight: 300;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border: 1px solid #c2c2c2;
+    outline: none;
+}
+
+.input::placeholder {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.input:focus {
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5);
+}
+
+.login-sing__remember {
+    padding-top: 15px;
+    font-size: 12px;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.login-sing__remember a {
+    margin-left: 40px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.login-sing__remember a:hover {
+    text-decoration: underline
+}
+
+.social-in {
+    padding: 20px;
+}
+
+.social-in a {
+    padding: 0 10px;
+    font-size: 22px;
+    color: #555555;
+}
+
+.sing-in {
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.sing-in:hover {
+    text-decoration: underline;
+}
+
+.login-sing__footer {
+    text-align: left;
+    font-size: 14px;
+}
+
+.login-sing__footer a {
+    text-decoration: none;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.login-sing__footer span {
+    text-decoration: underline;
+    color: #002dd6;
+}
+
+.login-sing__footer a:hover {
+    text-decoration: underline;
+}
+
+.login__link {
+    display: block;
+    margin-top: 15px;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+/* Comment Post */
+.comment-post {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.comment-post .container {
+    padding: 20px 40px 30px 30px;
+}
+
+.post__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.post__title {
+    font-size: 24px;
+    font-style: italic;
+}
+
+.post__link a {
+    font-style: italic;
+    color: #000;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.post__link a:hover {
+    text-decoration: underline;
+}
+
+.post__add {
+    display: flex;
+    align-items: center;
+}
+
+.post__avatar {
+    padding-left: 20px;
+    padding-right: 60px;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__control {
+    overflow: hidden;
+    resize: none;
+    width: 100%;
+    height: 40px;
+    padding: 15px;
+    margin-right: 5px;
+    background: none;
+    border: 1px solid #c2c2c2;
+    font-family: inherit;
+    color: inherit;
+    outline: none;
+}
+
+.form__control:focus {
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5);
+}
+
+.post__btn {
+    height: 40px;
+    padding: 0 15px;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    background: #383737;
+    border: none;
+    cursor: pointer;
+}
+
+/* Comment Blog */
+.comment-blog {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.comments__title {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    margin: 30px;
+
+    font-size: 20px;
+    font-style: italic;
+
+    border-bottom: 2px solid #dadbdb;
+}
+
+.comments {
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.comments__item {
+    padding-top: 20px;
+}
+
+.comments__header {
+    display: flex;
+}
+
+.comments__avatar {
+    padding-right: 15px;
+}
+
+.post-by {
+    font-weight: 300;
+}
+
+.comments__group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comments__name {
+    font-weight: 700;
+}
+
+.comments__name a,.comments__pubdate {
+    font-size: 12px;
+    color: #629494;
+}
+
+.comments__ico a {
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+}
+
+.comments__text {
+    padding-top: 10px;
+    font-weight: 300;
+}
+
+/* Pagination */
+.pagination {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.pagination__inner {
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+}
+
+.pagination__item {
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #000;
+    text-decoration: none;
+}
+
+.pagination__item:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #2f2f2f;
+    color: #fff;
+}
+
+.footer a {
+    font-size: 12px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.footer a:hover {
+    color: rgb(200, 200, 200);
+}
+
+.copy {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.copy div {
+    text-align: end;
 }
